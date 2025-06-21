@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+.teko-font {
+  font-family: "Teko", sans-serif;
+}
