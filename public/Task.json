@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Complete Project Proposal",
+        "category": "Work",
+        "short_description": "Finish and submit the client project proposal draft.",
+        "long_description": "Review all client requirements, finalize the project scope, write the proposal document, and send it to the team lead for approval before submission. Ensure all financial estimates are included.",
+        "end_date": "Monday, 2023-11-20",
+        "status": "Ongoing"
+    },
+    {
+        "id": 2,
+        "name": "Team Meeting",
+        "category": "Work",
+        "short_description": "Attend weekly team sync-up meeting.",
+        "long_description": "Discuss project progress, roadblocks, and next steps with the team. Prepare updates on your tasks and take notes on action items. Meeting link will be shared via email.",
+        "end_date": "Wednesday, 2023-11-15",
+        "status": "Pending"
+    },
+    {
+        "id": 3,
+        "name": "Client Feedback Review",
+        "category": "Work",
+        "short_description": "Analyze client feedback on latest deliverable.",
+        "long_description": "Compile all client comments from the shared document, categorize them by priority, and create a plan to address critical issues first. Schedule a call with the client if clarifications are needed.",
+        "end_date": "Friday, 2023-11-17",
+        "status": "Collaborate Task"
+    },
+    {
+        "id": 4,
+        "name": "Gym Session",
+        "category": "Personal",
+        "short_description": "1-hour workout at the gym.",
+        "long_description": "Focus on upper body strength training: 3 sets of bench press, shoulder press, and bicep curls. Include 15 minutes of cardio warm-up and stretching to prevent injuries.",
+        "end_date": "Tuesday, 2023-11-14",
+        "status": "Done"
+    },
+    {
+        "id": 5,
+        "name": "Grocery Shopping",
+        "category": "Personal",
+        "short_description": "Buy weekly groceries.",
+        "long_description": "Purchase vegetables, fruits, dairy, and pantry staples from the supermarket. Check the meal plan list and don’t forget to pick up cat food for Mittens.",
+        "end_date": "Sunday, 2023-11-12",
+        "status": "Pending"
+    },
+    {
+        "id": 6,
+        "name": "Family Dinner",
+        "category": "Personal",
+        "short_description": "Host dinner for parents.",
+        "long_description": "Prepare a 3-course meal (appetizer, main course, dessert) and decorate the dining area. Confirm dietary restrictions with Mom and Dad beforehand. Set the table by 6 PM.",
+        "end_date": "Saturday, 2023-11-18",
+        "status": "Ongoing"
+    },
+    {
+        "id": 7,
+        "name": "Research Paper Draft",
+        "category": "Study",
+        "short_description": "Write first draft of AI ethics paper.",
+        "long_description": "Complete sections 1-3 (introduction, literature review, methodology) of the 10-page paper. Use at least 5 academic sources and follow APA formatting guidelines. Submit to professor for feedback.",
+        "end_date": "Thursday, 2023-11-16",
+        "status": "Ongoing"
+    },
+    {
+        "id": 8,
+        "name": "Math Problem Set",
+        "category": "Study",
+        "short_description": "Solve calculus assignment problems.",
+        "long_description": "Complete all 12 problems on derivatives and integrals. Show step-by-step solutions and verify answers using Wolfram Alpha. Group study allowed but no copying.",
+        "end_date": "Monday, 2023-11-13",
+        "status": "Done"
+    },
+    {
+        "id": 9,
+        "name": "Group Project Meeting",
+        "category": "Study",
+        "short_description": "Plan presentation slides with team.",
+        "long_description": "Decide slide distribution, review content coherence, and practice timing. Assign someone to handle Q&A preparation. Meet in Library Room B at 2 PM.",
+        "end_date": "Friday, 2023-11-17",
+        "status": "Collaborate Task"
+    },
+    {
+        "id": 10,
+        "name": "Read Chapter 5",
+        "category": "Study",
+        "short_description": "Read and summarize textbook chapter.",
+        "long_description": "Read Chapter 5 (Neural Networks) from the 'Machine Learning Basics' textbook. Highlight key concepts and write a 1-page summary with examples. Submit to the online portal.",
+        "end_date": "Sunday, 2023-11-19",
+        "status": "Pending"
+    }
+]

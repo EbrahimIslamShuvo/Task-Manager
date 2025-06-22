@@ -1,16 +1,20 @@
-import React from 'react';
-import NavBar from './Component/NavBar';
-import { Outlet } from 'react-router-dom';
-import Footer from './Component/Footer';
+import React, { useEffect } from "react";
+import { Outlet } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Root = () => {
-    return (
-        <div>
-            <NavBar></NavBar>
-            <Outlet></Outlet>
-            <Footer></Footer>
-        </div>
-    );
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false, 
+    });
+  }, []);
+  return (
+    <div>
+      <Outlet></Outlet>
+    </div>
+  );
 };
 
 export default Root;

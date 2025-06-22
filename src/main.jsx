@@ -6,11 +6,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Root from './Root';
-import Home from './Pages/Home/Home';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
-import Error from './Pages/Error/Error';
+import SignIn from './Pages/SignIn/SignIn';
 import ForgetPassword from './Pages/SignIn/ForgetPassword';
+import SignUp from './Pages/SignUp/SignUp';
+import Home from './Pages/Home/Home';
+import TaskList from './Pages/TaskList/TaskList';
+import Spin from './Pages/Spin/Spin';
+import SingleTask from './Pages/TaskList/SingleTask';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +23,7 @@ const router = createBrowserRouter([
     children:[
       {
         path: "/",
-        element: <Home></Home>
+        element: <SignIn></SignIn>
       },
       {
         path: "/about",
@@ -29,23 +33,33 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>
       },
+      {
+        path: "/forgetPassword",
+        element: <ForgetPassword></ForgetPassword>
+      },
+      {
+        path: "/signUp",
+        element: <SignUp></SignUp>,
+      },
+      {
+        path: "/dashboard",
+        element: <Home></Home>,
+        children: [
+          {
+            path: "/dashboard",
+            element: <TaskList></TaskList>
+          },
+          {
+            path: "/dashboard/spin",
+            element: <Spin></Spin>
+          },
+          {
+            path: "/dashboard/task/:id",
+            element: <SingleTask></SingleTask>
+          }
+        ]
+      }
     ]
-  },
-  {
-    path: "/error",
-    element: <Error></Error>
-  },
-  {
-    path: "/signin",
-    element: <Error></Error>
-  },
-  {
-    path: "/signup",
-    element: <Error></Error>
-  },
-  {
-    path: "/forgetPassword",
-    element: <ForgetPassword></ForgetPassword>
   }
 ]);
 
