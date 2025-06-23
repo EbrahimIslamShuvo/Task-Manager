@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { Dropdown } from 'primereact/dropdown';
 import { FaPenToSquare } from "react-icons/fa6";
 import TaskCard from './TaskCard';
+import { NavLink } from 'react-router-dom';
 
 const TaskList = () => {
-    const taskCategories = ["All Category", "ART", "Personal", "Study"];
+    const taskCategories = ["All Category", "Work", "Personal", "Study"];
     const taskStatus = ["All Task", "Ongoing", "Pending", "Collaborative", "Done"];
 
     const [selectedCategory, setSelectedCategory] = useState("All Category");
@@ -45,10 +46,12 @@ const TaskList = () => {
                             placeholder="Select Task Status"
                             className="w-fit gap-3"
                         />
-                        <div className="bg-[#60E5AE] py-2 px-4 rounded-lg flex items-center gap-1 cursor-pointer">
-                            <FaPenToSquare className='text-lg' />
-                            <p>Create New Task</p>
-                        </div>
+                        <NavLink to={"/error"}>
+                            <div className="bg-[#60E5AE] py-2 px-4 rounded-lg flex items-center gap-1 cursor-pointer">
+                                <FaPenToSquare className='text-lg' />
+                                <p>Create New Task</p>
+                            </div>
+                        </NavLink>
                     </div>
                 </div>
                 <div className="grid grid-cols-3 gap-10">

@@ -6,6 +6,7 @@ import shape from '../../assets/shape.png'
 import floor from '../../assets/Floor.png'
 import people from '../../assets/people.png'
 import ButtonOne from '../../Component/Shared/ButtonOne';
+import { NavLink } from 'react-router-dom';
 const Error = () => {
     return (
         <div>
@@ -31,9 +32,11 @@ const Error = () => {
                         <img className='relative -mt-3' src={floor} alt="" />
                         <p className='relative teko-font text-3xl -mt-35 -ml-90'>Opss.. <br />Page Not Found</p>
                     </div>
-                    <div className="mt-45">
-                        <ButtonOne name={"Back To Home"} color={"#60E5AE"} width={"400px"}></ButtonOne>
-                    </div>
+                    <NavLink to={"/dashboard"}>
+                        <div className="mt-45">
+                            <ButtonOne name={"Back To Home"} color={"#60E5AE"} width={"400px"}></ButtonOne>
+                        </div>
+                    </NavLink>
                 </div>
             </div>
         </div>

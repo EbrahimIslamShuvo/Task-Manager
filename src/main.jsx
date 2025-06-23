@@ -15,6 +15,7 @@ import Home from './Pages/Home/Home';
 import TaskList from './Pages/TaskList/TaskList';
 import Spin from './Pages/Spin/Spin';
 import SingleTask from './Pages/TaskList/SingleTask';
+import Error from './Pages/Error/Error';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/signUp",
         element: <SignUp></SignUp>,
+      },
+      {
+        path: "/error",
+        element: <Error></Error> ,
       },
       {
         path: "/dashboard",
